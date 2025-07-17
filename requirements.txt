@@ -1,0 +1,6 @@
+openai
+weaviate-client
+python-dotenv
+tiktoken
+PyMuPDF
+langchain
