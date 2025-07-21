@@ -17,13 +17,14 @@ def get_client():
         client = weaviate.connect_to_local(
             port=8080,
             grpc_port=50051,
-            additional_headers=additional_headers
+            headers=additional_headers
         )
     else:
                # Cloud Weaviate (WCS)
         client = weaviate.connect_to_weaviate_cloud(
             cluster_url=WEAVIATE_URL,
-            auth_credentials=Auth.api_key(WEAVIATE_API_KEY)
+            auth_credentials=Auth.api_key(WEAVIATE_API_KEY),
+            headers=additional_headers
         )
 
     return client

@@ -20,6 +20,8 @@ def create_rag_class(client: WeaviateClient):
         ],
         properties=[
             Property(name="text", data_type=DataType.TEXT)
-        ]
+        ],
+        #this is required in order to use LLM to better format your ans from chunks received
+        generative_config=Configure.Generative.openai(model="gpt-4o-mini")
     )
     print("Class 'Chunk' created.")
