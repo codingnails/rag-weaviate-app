@@ -1,4 +1,4 @@
-# 📄 PDF-RAG-Weaviate App using Weaviate and OpenAI
+# 📄 PDF Assistant App using Weaviate and OpenAI
 
 A lightweight Retrieval-Augmented Generation (RAG) demo app that transforms any PDF into a smart, searchable knowledge base using Weaviate as a vector store and OpenAI's embedding + generative models.
 
@@ -28,8 +28,8 @@ For example, you can try appliance manuals, research papers, reports, or any tex
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/codingnails/PDF-RAG-Weaviate.git
-cd PDF-RAG-Weaviate
+git clone https://github.com/codingnails/pdf-assistant-rag-weaviate.git
+cd pdf-assistant-rag-weaviate
 ````
 
 ### 2. Create and Activate a Virtual Environment
